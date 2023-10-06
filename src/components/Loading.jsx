@@ -1,9 +1,9 @@
-import {useState} from "react";
+import { useState } from "react";
 
 const Loading = () => {
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-return { loading, setLoading };
-}
+  return { loading, setLoading };
+};
 
 export default Loading;

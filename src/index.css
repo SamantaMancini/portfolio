@@ -3,30 +3,29 @@
 @tailwind utilities;
 
 .glow {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .glow:hover {
-    box-shadow: 0 0 25px rgb(71, 157, 206);
+  box-shadow: 0 0 25px rgb(71, 157, 206);
 }
 .img_glow {
-    box-shadow: 0 0 55px rgb(71, 157, 206)
+  box-shadow: 0 0 55px rgb(71, 157, 206);
 }
 
 .neno-button {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .neno-button:hover {
-    box-shadow: 0 0 15px rgb(71, 157, 206);
+  box-shadow: 0 0 15px rgb(71, 157, 206);
 }
 .b_glow {
-    box-shadow: 0 0 15px rgb(71, 157, 206);
+  box-shadow: 0 0 15px rgb(71, 157, 206);
 }
 
 .click {
-    opacity: 0;
+  opacity: 0;
 }
 
 .transition-colors {
-    transition-property: background-color, border-color, color;
-  }
-
+  transition-property: background-color, border-color, color;
+}
