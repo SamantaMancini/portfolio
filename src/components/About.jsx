@@ -1,3 +1,5 @@
+import cv from "../assets/CV_SamantaMancini.pdf";
+
 const About = () => {
   return (
     <section id="/about" className="overflow-x-hidden">
@@ -40,7 +42,7 @@ const About = () => {
           <div className="flex mt-8 gap-2">
             <div className="flex items-center justify-center">
               <div className="flex space-x-2">
-                <a href="./src/assets/CV_SamantaMancini.pdf" download>
+                <a href={cv} download>
                   <button className="neno-button shadow-xl hover:shadow-cyan-800/50 border-2  hover:text-cyan-500 hover:bg-slate-900 border-cyan-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden">
                     Download CV
                   </button>
