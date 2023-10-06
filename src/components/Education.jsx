@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Aos from "aos";
+import master from "../assets/Attestato Completamento Master.pdf";
 
 const Education = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const Education = () => {
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
               <a
-                href="../assets/Attestato Completamento Master.pdf"
+                href={master}
                 download
               >
                 <button className="neno-button shadow-xl hover:shadow-cyan-800/50 border-2  hover:text-cyan-500 hover:bg-slate-900 border-cyan-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden">
