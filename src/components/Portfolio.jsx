@@ -1,5 +1,9 @@
 import { useEffect } from "react";
 import Aos from "aos";
+import project1 from "../assets/images/project-2.jpg";
+import project2 from "../assets/images/project-3.jpg";
+import project3 from "../assets/images/project-5.png";
+import project4 from "../assets/images/project-6.jpg";
 
 const Project = () => {
   useEffect(() => {
@@ -8,19 +12,19 @@ const Project = () => {
 
   const projects = [
     {
-      image: "../assets/images/project-2.jpg",
+      image: project1,
       link: "https://hobbitcounter.netlify.app",
     },
     {
-      image: "../assets/images/project-3.jpg",
+      image: project2,
       link: "https://bookresearch.netlify.app/",
     },
     {
-      image: "../assets/images/project-5.png",
+      image: project3,
       link: "https://borcelleyogastudio.netlify.app/",
     },
     {
-      image: "../assets/images/project-6.jpg",
+      image: project4,
       link: "https://climatechangealert.netlify.app",
     },
   ];
