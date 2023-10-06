@@ -8,19 +8,19 @@ const Project = () => {
 
   const projects = [
     {
-      image: "/src/assets/images/project-2.jpg",
+      image: "../assets/images/project-2.jpg",
       link: "https://hobbitcounter.netlify.app",
     },
     {
-      image: "/src/assets/images/project-3.jpg",
+      image: "../assets/images/project-3.jpg",
       link: "https://bookresearch.netlify.app/",
     },
     {
-      image: "/src/assets/images/project-5.png",
+      image: "../assets/images/project-5.png",
       link: "https://borcelleyogastudio.netlify.app/",
     },
     {
-      image: "/src/assets/images/project-6.jpg",
+      image: "../assets/images/project-6.jpg",
       link: "https://climatechangealert.netlify.app",
     },
   ];
