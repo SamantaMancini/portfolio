@@ -11,10 +11,9 @@ const About = () => {
           >
             About me
           </h2>
-          <div className="max-[576px]:whitespace-wrap max-[576px]:px-10">
-            <p data-aos="fade-left" className="max-[375px]:text-sm">
-              I am a girl with a passion for the creativity and the coding.{" "}
-              <br />
+          <div className="max-[576px]:whitespace-wrap max-[576px]:px-10 landscape:px-10 text-left">
+            <p data-aos="fade-left" className="max-[375px]:text-sm max-[375px]:leading-6">
+              I am a girl with a passion for the creativity and the coding.
               My creativity allows me to find innovative solutions to problems
               and create something from scratch. I am proactive in taking
               initiative and anticipating project needs. My attention to detail
@@ -23,16 +22,13 @@ const About = () => {
               teamwork and collaboration with colleagues and stakeholders. I am
               an attentive listener, able to fully understand the needs of
               customers and team members.
-              <br />
               After my experience in Game Design, I discovered the role of UI/UX
               Design, which fascinated me.
-              <br />I have decided to study the Front-End Master at start2impact
+              I have decided to study the Front-End Master at start2impact
               University with the goal of combining my creativity and passion
               for coding to create innovative and visually appealing user
-              experiences
-              <br />
-              I built 5 practical projects reviewed by field experts, acquiring
-              vertical skills such as HTML, CSS, JavaScript, and React. <br />I
+              experiences. I built 5 practical projects reviewed by field experts, acquiring
+              vertical skills such as HTML, CSS, JavaScript, and React. I
               finished the Master Front end developer and I am also acquiring
               skills in Python and Typescript. I am always looking for new
               challenges as a Front-End developer, eager to create innovative
