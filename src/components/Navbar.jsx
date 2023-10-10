@@ -6,9 +6,10 @@ import { CiMenuFries } from "react-icons/ci";
 const Navbar = ({ handleSwitch, contextTheme }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
   const content = (
     <>
-      <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition z-10 text-white">
+      <div className="lg:hidden block absolute top-16 left-0 right-0 bg-slate-900 transition z-10 text-white">
         <ul className="text-center text-xl p-20 z-10">
           <Link spy={true} smooth={true} to="/home">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
@@ -41,7 +42,7 @@ const Navbar = ({ handleSwitch, contextTheme }) => {
   );
 
   return (
-    <nav className="sticky top-0 z-10">
+    <nav className="sticky top-0 z-10 bg-slate-800 text-white">
       <div className="h-10vh flex justify-between z-50 lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1 gap-5">
           <span className="text-3xl font-bold text-cyan-500">MISAKI</span>
@@ -86,7 +87,7 @@ const Navbar = ({ handleSwitch, contextTheme }) => {
         </div>
         <div>{click && content}</div>
 
-        <button className="block sm:hidden transition" onClick={handleClick}>
+        <button className="block md:hidden transition" onClick={handleClick}>
           {click ? <FaTimes size={30} /> : <CiMenuFries size={30} />}
         </button>
       </div>

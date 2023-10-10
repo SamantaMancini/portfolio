@@ -22,12 +22,12 @@ const Education = () => {
           Master in Front End Development
         </h3>
         <div className="max-[576px]:whitespace-wrap max-[576px]:px-10">
-          <p data-aos="fade-left" className="max-[375px]:text-sm">
+          <p data-aos="fade-left" className="max-[576px]:text-sm max-[992px]:px-1 mobile-landscape max-[576px]:leading-6">
             At Start2Impact, I learned coding theory certified by written exams
             and independently built 5 practical projects, all of which were
             reviewed by field experts. This hands-on experience enhanced my
-            skills in HTML5&CSS, Javascript, Node.js and frameworks like:
-            Bootstrap, React.js/Redux.
+            skills in HTML5&CSS, Javascript, Node.js, React.js, Redux,
+            Bootstrap.
           </p>
         </div>
         <div className="flex mt-8 gap-2">

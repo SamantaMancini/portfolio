@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { FaHtml5, FaCss3, FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
-import { DiJavascript, DiPython } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
 import Aos from "aos";
 
@@ -81,38 +80,10 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+            className="text-[26px] flex items-center justify-center font-semibold rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
           >
             <a href="https://github.com/" target="_blank" rel="noreferrer">
               <FaGithub size={80} />
-            </a>
-          </div>
-        </div>
-        <h2
-          data-aos="fade-right"
-          className="text-[52px] font-semibold mb-20 leading-normal mt-20 uppercase text-cyan-500"
-        >
-          Im learning
-        </h2>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-around gap-20">
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-              <DiPython size={80} />
-            </a>
-          </div>
-          <div
-            data-aos="fade-down"
-            className="text-[26px] flex items-center justify-center font-semibold text-blue-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <a
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <SiTypescript size={80} />
             </a>
           </div>
         </div>
