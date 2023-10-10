@@ -11,7 +11,7 @@ const About = () => {
           >
             About me
           </h2>
-          <div className="max-[576px]:whitespace-wrap max-[576px]:px-10 landscape:px-10 text-left">
+          <div className="max-[576px]:whitespace-wrap max-[576px]:px-10 max-[992px]:px-10 text-left mobile-landscape">
             <p data-aos="fade-left" className="max-[375px]:text-sm max-[375px]:leading-6">
               I am a girl with a passion for the creativity and the coding.
               My creativity allows me to find innovative solutions to problems

@@ -10,6 +10,7 @@ body {
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
+
 .glow {
   transition: all 0.3s ease-in-out;
 }
@@ -36,4 +37,11 @@ h1, h2, h3 {
 
 .transition-colors {
   transition-property: background-color, border-color, color;
+}
+
+@media (max-width: 992px) and (orientation:landscape){
+  .mobile-landscape {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
