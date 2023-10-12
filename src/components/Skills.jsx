@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { FaHtml5, FaCss3, FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
+import { BiLogoGit } from "react-icons/bi";
 import { DiJavascript } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
 import Aos from "aos";
@@ -15,7 +16,7 @@ const Skills = () => {
           data-aos="fade-right"
           className="text-[52px] font-semibold mb-20 leading-normal uppercase text-cyan-500"
         >
-          Skills
+          Hard Skills
         </h2>
         <div className="grid max-[375px]:grid-cols-1 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-around gap-10">
           <div
@@ -80,11 +81,73 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
+            className="text-[26px] flex items-center justify-center font-semibold text-red-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
           >
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <FaGithub size={80} />
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+              <BiLogoGit size={80} />
             </a>
+          </div>
+        </div>
+        <h2
+          data-aos="fade-right"
+          className="text-[52px] font-semibold mb-20 leading-normal uppercase text-cyan-500"
+        >
+          Soft Skills
+        </h2>
+        <div className="grid max-[375px]:grid-cols-1 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-around gap-10">
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-pink-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl">Creativity</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-red-600 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Problem solving</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-blue-600 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Precision</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-green-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Attention to detail</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-orange-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Proactive</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-purple-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Critical thinking</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-yellow-400 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Teamwork</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-cyan-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Listening</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-[26px] flex items-center justify-center font-semibold text-orange-300 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+          >
+            <p className="lg:text-2xl text-center">Empathetic</p>
           </div>
         </div>
       </div>

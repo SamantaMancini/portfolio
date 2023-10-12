@@ -22,7 +22,10 @@ const Education = () => {
           Master in Front End Development
         </h3>
         <div className="max-[576px]:whitespace-wrap max-[576px]:px-10">
-          <p data-aos="fade-left" className="max-[576px]:text-sm max-[992px]:px-1 mobile-landscape max-[576px]:leading-6">
+          <p
+            data-aos="fade-left"
+            className="max-[576px]:text-sm max-[992px]:px-1 mobile-landscape max-[576px]:leading-6"
+          >
             At Start2Impact, I learned coding theory certified by written exams
             and independently built 5 practical projects, all of which were
             reviewed by field experts. This hands-on experience enhanced my

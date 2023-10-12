@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="lg:px-56 px-0 lg:py-40 py-20 text-center gap-1 lg:text-start flex lg:flex-row flex-col-reverse justify-start lg:gap-20 items-center">
         <div className=" h-full lg:py-40 flex flex-col justify-center lg:items-start items-center">
           <h1 className="text-[52px] font-semibold mb-8 leading-normal uppercase text-cyan-500">
-            Hello! <br/>I am Samy
+            Hello! <br />I am Samy
           </h1>
           <h2 className="md:text-2xl text-xl md:leading-normal leading-5 mt-4 font-bold">
             Junior Front End Developer
