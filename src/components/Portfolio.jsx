@@ -36,10 +36,13 @@ const Project = () => {
     >
       <h2
         data-aos="fade-right"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-cyan-500"
+        className="text-[52px] font-semibold leading-normal uppercase text-cyan-500"
       >
         Projects
       </h2>
+      <p data-aos="fade-right" className="text-center lg:text-2xl mb-20">
+        Click the image for try the project
+      </p>
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-5"
         data-aos="fade-left"
