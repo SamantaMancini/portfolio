@@ -4,6 +4,7 @@ import project1 from "../assets/images/project-2.jpg";
 import project2 from "../assets/images/project-3.jpg";
 import project3 from "../assets/images/project-5.png";
 import project4 from "../assets/images/project-6.jpg";
+import project5 from "../assets/images/project-7.png";
 
 const Project = () => {
   useEffect(() => {
@@ -27,6 +28,10 @@ const Project = () => {
       image: project4,
       link: "https://climatechangealert.netlify.app",
     },
+    {
+      image: project5,
+      link: "https://to-do-appbyme.netlify.app/",
+    }
   ];
 
   return (
