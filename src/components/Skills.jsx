@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
-import { BiLogoGit } from "react-icons/bi";
+import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
+import { BiLogoGit, BiLogoRedux } from "react-icons/bi";
 import { DiJavascript } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
 import Aos from "aos";
@@ -68,7 +68,7 @@ const Skills = () => {
             className="text-[26px] flex items-center justify-center font-semibold text-green-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
           >
             <a href="https://nodejs.org/it" target="_blank" rel="noreferrer">
-              <FaNodeJs size={80} />
+              <BiLogoRedux size={80} />
             </a>
           </div>
           <div
