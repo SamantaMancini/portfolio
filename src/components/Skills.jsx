@@ -65,7 +65,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-green-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
+            className="text-[26px] flex items-center justify-center font-semibold text-purple-800 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
           >
             <a href="https://nodejs.org/it" target="_blank" rel="noreferrer">
               <BiLogoRedux size={80} />
