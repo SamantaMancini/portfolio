@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
-import { BiLogoGit, BiLogoRedux } from "react-icons/bi";
+import { FaHtml5, FaCss3, FaReact, FaAngular } from "react-icons/fa";
+import { BiLogoGit, BiLogoRedux, BiLogoTypescript } from "react-icons/bi";
 import { DiJavascript } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
+
 import Aos from "aos";
 
 const Skills = () => {
@@ -81,10 +82,18 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-red-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
+            className="text-[26px] flex items-center justify-center font-semibold text-blue-700 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
           >
-            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-              <BiLogoGit size={80} />
+            <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+              <BiLogoTypescript size={80} />
+            </a>
+          </div>
+          <div
+            data-aos="fade-down"
+            className="text-[26px] flex items-center justify-center font-semibold text-red-600 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow mb-20"
+          >
+            <a href="https://angular.io" target="_blank" rel="noreferrer">
+              <FaAngular size={80} />
             </a>
           </div>
         </div>

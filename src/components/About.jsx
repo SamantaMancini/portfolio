@@ -1,4 +1,4 @@
-import cv from "../assets/CV_SamantaMancini.pdf";
+import cv from "../assets/CV Samanta.pdf";
 
 const About = () => {
   return (
