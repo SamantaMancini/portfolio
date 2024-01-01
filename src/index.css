@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 h1,
 h2,
-h3 {
-  font-family: "Lato", sans-serif;
+h3,
+.logo,
+.type {
+  font-family: 'Oswald', sans-serif;
 }
 
 .glow {
   transition: all 0.3s ease-in-out;
 }
 .glow:hover {
-  box-shadow: 0 0 25px rgb(71, 157, 206);
+  box-shadow: 0 0 25px rgb(252, 90, 230);
 }
 .img_glow {
   box-shadow: 0 0 55px rgb(71, 157, 206);
@@ -26,10 +30,10 @@ h3 {
   transition: all 0.3s ease-in-out;
 }
 .neno-button:hover {
-  box-shadow: 0 0 15px rgb(71, 157, 206);
+  box-shadow: 0 0 15px rgb(252, 90, 230);
 }
 .b_glow {
-  box-shadow: 0 0 15px rgb(71, 157, 206);
+  box-shadow: 0 0 15px rgb(252, 90, 230);
 }
 
 .click {
@@ -40,6 +44,27 @@ h3 {
   transition-property: background-color, border-color, color;
 }
 
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+
+.hologram {
+  background-color: rgba(25, 38, 71, 0.3);
+}
 @media (max-width: 992px) and (orientation: landscape) {
   .mobile-landscape {
     padding-left: 20px;

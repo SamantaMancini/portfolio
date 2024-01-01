@@ -33,7 +33,7 @@ const Contact = () => {
     }
   };
   return (
-    <section id="/contact" className="overflow-x-hidden">
+    <section className="overflow-x-hidden">
       <div
         data-aos="fade-left"
         className="p-4 lg:p-20 flex flex-col items-center justify-center"

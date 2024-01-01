@@ -36,8 +36,7 @@ const Project = () => {
 
   return (
     <section
-      id="/projects"
-      className="p-20 flex flex-col items-center justify-center overflow-x-hidden"
+      className="flex flex-col items-center justify-center overflow-x-hidden"
     >
       <h2
         data-aos="fade-right"
@@ -45,7 +44,7 @@ const Project = () => {
       >
         Projects
       </h2>
-      <p data-aos="fade-right" className="text-center lg:text-2xl mb-20">
+      <p data-aos="fade-right" className="text-center lg:text-2xl">
         Click the image for try the project
       </p>
       <div

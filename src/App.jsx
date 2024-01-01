@@ -1,39 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
-import { useThemeContext } from "../src/context/useThemeContext.jsx";
 import Loading from "./components/Loading.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import Projects from "./components/Portfolio.jsx";
 import Skills from "./components/Skills.jsx";
-import Portfolio from "./components/Portfolio.jsx";
-import Education from "./components/Education.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => {
-  const { contextTheme, setContextTheme } = useThemeContext();
   const { loading, setLoading } = Loading();
-
-  // Handler for the switch change event
-  const handleSwitch = () => {
-    // Change the theme in the context
-    setContextTheme((contextTheme) =>
-      contextTheme === "Light" ? "Dark" : "Light",
-    );
-  };
-
-  const themeClasses =
-    contextTheme === "Dark"
-      ? "bg-slate-900 text-white"
-      : "bg-white text-gray-800";
+  const [showHologram, setShowHologram] = useState(false)
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  }, [setLoading]);
+    setShowHologram(true)
+    }, [setLoading]);
 
   return (
     <>
@@ -51,14 +38,17 @@ const App = () => {
           />
         </div>
       ) : (
-        <div className={themeClasses}>
-          <Navbar handleSwitch={handleSwitch} contextTheme={contextTheme} />
-          <Hero />
-          <About />
-          <Education />
-          <Portfolio />
-          <Skills />
-          <Contacts />
+        <div className="h-screen bg-slate-900">
+          <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Hero setShowHologran={setShowHologram} showHologram={showHologram} />} />
+            <Route path="/about" element={<About setShow={setShowHologram} show={showHologram} />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contacts" element={<Contacts />} />
+          </Routes>
+          </BrowserRouter>
           <Footer />
         </div>
       )}

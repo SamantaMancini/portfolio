@@ -11,7 +11,7 @@ const Skills = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section id="/skills">
+    <section>
       <div className="flex flex-col items-center justify-center">
         <h2
           data-aos="fade-right"
@@ -45,31 +45,11 @@ const Skills = () => {
             </a>
           </div>
           <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-purple-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <a
-              href="https://getbootstrap.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsBootstrapFill size={80} />
-            </a>
-          </div>
-          <div
             data-aos="fade-down"
             className="text-[26px] flex items-center justify-center font-semibold text-yellow-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
           >
             <a href="https://javascript.info/" target="_blank" rel="noreferrer">
               <DiJavascript size={80} />
-            </a>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-purple-800 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <a href="https://nodejs.org/it" target="_blank" rel="noreferrer">
-              <BiLogoRedux size={80} />
             </a>
           </div>
           <div
@@ -97,69 +77,7 @@ const Skills = () => {
             </a>
           </div>
         </div>
-        <h2
-          data-aos="fade-right"
-          className="text-[52px] font-semibold mb-20 leading-normal uppercase text-cyan-500"
-        >
-          Soft Skills
-        </h2>
-        <div className="grid max-[375px]:grid-cols-1 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-around gap-10">
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-pink-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl">Creativity</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-red-600 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Problem solving</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-blue-600 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Precision</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-green-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Attention to detail</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-orange-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Proactive</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-purple-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Critical thinking</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-yellow-400 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Teamwork</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-cyan-500 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Listening</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="text-[26px] flex items-center justify-center font-semibold text-orange-300 rounded-ss-3xl rounded-br-3xl h-36 w-44 border-2 border-cyan-800 b_glow"
-          >
-            <p className="lg:text-2xl text-center">Empathetic</p>
-          </div>
-        </div>
-      </div>
+       </div>
     </section>
   );
 };

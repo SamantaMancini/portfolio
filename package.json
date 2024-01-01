@@ -17,7 +17,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-loader-spinner": "^5.4.5",
-    "react-scroll": "^1.8.9"
+    "react-router-dom": "^6.21.1",
+    "react-scroll": "^1.8.9",
+    "react-transition-group": "^4.4.5",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

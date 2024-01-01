@@ -1,93 +1,77 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { FaTimes, FaMoon, FaSun } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
-const Navbar = ({ handleSwitch, contextTheme }) => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
+  
   const content = (
     <>
-      <div className="lg:hidden block absolute top-16 left-0 right-0 bg-slate-900 transition z-10 text-white">
+      <div className="lg:hidden block absolute top-16 left-0 right-0 transition z-20 bg-slate-900 text-cyan-500">
         <ul className="text-center text-xl p-20 z-10">
-          <Link spy={true} smooth={true} to="/home">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Home
-            </li>
+        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <Link to="/">
+            Home
           </Link>
-          <Link spy={true} smooth={true} to="/about">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              About
-            </li>
+          </li>
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <Link to="/about">
+            About
           </Link>
-          <Link spy={true} smooth={true} to="/projects">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Projects
-            </li>
+          </li>
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <Link to="/projects">
+            Portfolio
           </Link>
-          <Link spy={true} smooth={true} to="/skills">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Skills
-            </li>
+          </li>
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <Link to="/skills">
+            Skills
           </Link>
-          <Link spy={true} smooth={true} to="/contact">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Contact
-            </li>
+          </li>
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <Link to="/contacts">
+            Contacts
           </Link>
+          </li>
         </ul>
       </div>
     </>
   );
 
   return (
-    <nav className="sticky top-0 z-10 bg-slate-800 text-white">
+    <nav className="z-10 bg-slate-900 text-cyan-500">
       <div className="h-10vh flex justify-between z-50 lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1 gap-5">
-          <span className="text-3xl font-bold text-cyan-500">MISAKI</span>
-          <button onClick={handleSwitch}>
-            {contextTheme === "Light" ? (
-              <FaSun size={20} />
-            ) : (
-              <FaMoon size={20} />
-            )}
-          </button>
+          <Link to="/">
+          <span className="text-3xl font-bold text-cyan-500 logo cursor-pointer">MISAKI</span>
+          </Link>
         </div>
         <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px] z-1">
-              <Link spy={true} smooth={true} to="/home">
-                <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-cyan-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-cyan-600 hover:border-cyan-600 cursor-pointer">
-                  Home
-                </li>
-              </Link>
-              <Link spy={true} smooth={true} to="/about">
-                <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-cyan-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-cyan-600 hover:border-cyan-600 cursor-pointer">
-                  About
-                </li>
-              </Link>
-              <Link spy={true} smooth={true} to="/projects">
-                <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-cyan-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-cyan-600 hover:border-cyan-600 cursor-pointer">
-                  Projects
-                </li>
-              </Link>
-              <Link spy={true} smooth={true} to="/skills">
-                <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-cyan-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-cyan-600 hover:border-cyan-600 cursor-pointer">
-                  Skills
-                </li>
-              </Link>
-              <Link spy={true} smooth={true} to="/contact">
-                <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-cyan-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-cyan-600 hover:border-cyan-600 cursor-pointer">
-                  Contact
-                </li>
-              </Link>
+            <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+              <Link to="/">Home</Link>
+              </li>
+              <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+              <Link to="/about">About</Link>
+              </li>
+              <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+              <Link to="/projects">Portfolio</Link>
+              </li>
+              <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+              <Link to="/skills">Skills</Link>
+              </li>
+              <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+              <Link to="/contacts">Contacts</Link>
+              </li>
             </ul>
           </div>
         </div>
         <div>{click && content}</div>
-
-        <button className="block md:hidden transition" onClick={handleClick}>
+          <button className="block md:hidden transition" onClick={handleClick}>
           {click ? <FaTimes size={30} /> : <CiMenuFries size={30} />}
         </button>
       </div>
