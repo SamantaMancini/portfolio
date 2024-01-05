@@ -15,7 +15,7 @@ const About = () => {
     });
   }, []);
   return (
-    <section>
+    <section className="px-4 lg:px-0">
       <Screen>
       <div className="text-center gap-5 flex flex-col justify-center items-center overflow-x-hidden">
         <div className="h-full flex flex-col justify-center items-center" data-aos="fade-right">
@@ -24,7 +24,7 @@ const About = () => {
           >
             About me
           </h2>
-          <div className="text-left mobile-landscape lg:mx-10">
+          <div className="text-left mobile-landscape lg:mx-10 px-4">
             <p
               className="text-white"
             >
