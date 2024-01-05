@@ -38,7 +38,7 @@ h3,
 
 
 .hologram {
-  background-color: rgba(25, 38, 71, 0.3);
+  background-color: rgba(0, 24, 83, 0.5);
 }
 @media (max-width: 992px) and (orientation: landscape) {
   .mobile-landscape {
