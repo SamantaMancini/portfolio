@@ -36,7 +36,7 @@ const App = () => {
           />
         </div>
       ) : (
-        <div className="h-screen bg-slate-900">
+        <div className="h-screen img-cover">
           <BrowserRouter>
           <Navbar />
           <Routes>

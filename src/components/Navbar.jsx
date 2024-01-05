@@ -42,7 +42,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="z-10 bg-slate-900 text-cyan-500">
+    <nav className="z-10 text-cyan-500">
       <div className="h-10vh flex justify-between z-50 lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1 gap-5">
           <Link to="/">
