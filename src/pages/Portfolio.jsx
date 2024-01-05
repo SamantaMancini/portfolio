@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import Screen from "../components/Screen";
+import Pagination from "../components/Pagination";
 import project1 from "../assets/images/project-2.jpg";
 import project2 from "../assets/images/project-3.jpg";
 import project3 from "../assets/images/project-5.png";
@@ -48,6 +49,7 @@ const Project = () => {
       >
         Projects
       </h2>
+      <Pagination />
       <p data-aos="fade-right" className="text-center text-base text-white">
         Click the image for try the project
       </p>
