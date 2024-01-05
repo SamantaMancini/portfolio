@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Screen from "../components/Screen";
 import { FaHtml5, FaCss3, FaReact, FaAngular } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { DiJavascript } from "react-icons/di";

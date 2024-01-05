@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Aos from "aos";
+import Screen from "../components/Screen";
 import project1 from "../assets/images/project-2.jpg";
 import project2 from "../assets/images/project-3.jpg";
 import project3 from "../assets/images/project-5.png";
@@ -47,17 +48,18 @@ const Project = () => {
       >
         Projects
       </h2>
-      <p data-aos="fade-right" className="text-center lg:text-2xl text-white">
+      <p data-aos="fade-right" className="text-center text-base text-white">
         Click the image for try the project
       </p>
+      <Screen>
       <div
-        className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-5 mt-5 lg:overflow-y-hidden overflow-y-auto lg:h-full h-[20rem] md:h-[40rem]"
+        className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-5 mt-5 lg:overflow-y-hidden overflow-y-auto lg:h-full h-[20rem] md:h-[40rem] px-4"
         data-aos="fade-left"
       >
         {projects?.map((project, index) => (
           <div key={index}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300 b_glow">
+              <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
                 <img
                   src={project.image}
                   alt="title"
@@ -68,6 +70,7 @@ const Project = () => {
           </div>
         ))}
       </div>
+      </Screen>
     </section>
   );
 };
