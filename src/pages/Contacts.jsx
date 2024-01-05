@@ -33,7 +33,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="overflow-x-hidden">
+    <section className="overflow-x-hidden px-4">
       <div
         data-aos="fade-left"
         className="flex flex-col items-center justify-center"
@@ -71,7 +71,7 @@ const Contact = () => {
             required
           ></textarea>
           <button
-            className="neno-button shadow-xl hover:shadow-cyan-800/50 text-white border-2 border-[#ff19f3] bg-[#ff19f3] hover:text-cyan-500 hover:bg-slate-800 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold"
+            className="neno-button shadow-xl hover:shadow-cyan-800/50 text-white border-2 border-[#ff19f3] bg-[#ff19f3] rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold"
             type="submit"
             disabled={loading}
           >
