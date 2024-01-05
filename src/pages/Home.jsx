@@ -1,16 +1,15 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect } from "react";
-import { CSSTransition } from "react-transition-group";
+import Screen from "../components/Screen";
 import { TypeAnimation } from 'react-type-animation';
 import hero from "../assets/images/hero.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../index.css'
 
-const Hero = ({ showHologram, setShowHologran}) => {
+const Home = () => {
 
   useEffect(() => {
-    setShowHologran(true)
     AOS.init({
       easing: "ease-out-quart",
       delay: 0,
@@ -19,8 +18,8 @@ const Hero = ({ showHologram, setShowHologran}) => {
   }, []);
   return (
     <section>
-      <CSSTransition in={showHologram} timeout={500} classNames="fade" unmountOnExit>
-      <div className="px-0 2xl:py-40 text-center gap-1 lg:text-start flex lg:flex-row flex-col-reverse justify-center lg:gap-[20%] items-center b_glow border-2 border-[#ff19f3] rounded-3xl mx-auto lg:w-[50rem] mt-5 hologram">
+       <Screen>
+      <div className="px-0 2xl:py-40 text-center gap-1 lg:text-start flex lg:flex-row flex-col-reverse justify-center lg:gap-[20%] items-center">
         <div className="lg:py-20 py-10 flex flex-col justify-center lg:items-start items-center z-10" data-aos="fade-right">
           <h1 className="text-[52px] font-semibold mb-8 leading-normal uppercase text-cyan-500">
             Hello! <br />I am Samy
@@ -79,9 +78,9 @@ const Hero = ({ showHologram, setShowHologran}) => {
           className="rounded-full border-2 p-1 border-cyan-600 img_glow max-[576px]:w-1/2 h-200px"
         />
       </div>
-      </CSSTransition>
+      </Screen>
     </section>
   );
 };
 
-export default Hero;
+export default Home;

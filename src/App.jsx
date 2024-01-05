@@ -3,23 +3,21 @@ import {BrowserRouter, Route, Routes } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
 import Loading from "./components/Loading.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import About from "./components/About.jsx";
-import Projects from "./components/Portfolio.jsx";
-import Skills from "./components/Skills.jsx";
-import Contacts from "./components/Contacts.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Projects from "./pages/Portfolio.jsx";
+import Skills from "./pages/Skills.jsx";
+import Contacts from "./pages/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => {
   const { loading, setLoading } = Loading();
-  const [showHologram, setShowHologram] = useState(false)
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-    setShowHologram(true)
     }, [setLoading]);
 
   return (
@@ -42,8 +40,8 @@ const App = () => {
           <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Hero setShowHologran={setShowHologram} showHologram={showHologram} />} />
-            <Route path="/about" element={<About setShow={setShowHologram} show={showHologram} />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contacts" element={<Contacts />} />

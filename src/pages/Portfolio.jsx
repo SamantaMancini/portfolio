@@ -8,7 +8,10 @@ import project5 from "../assets/images/project-7.png";
 
 const Project = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ 
+    easing: "ease-out-quart",
+    delay: 0,
+    duration: 750, });
   }, []);
 
   const projects = [
@@ -44,21 +47,21 @@ const Project = () => {
       >
         Projects
       </h2>
-      <p data-aos="fade-right" className="text-center lg:text-2xl">
+      <p data-aos="fade-right" className="text-center lg:text-2xl text-white">
         Click the image for try the project
       </p>
       <div
-        className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-5"
+        className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-5 mt-5 lg:overflow-y-hidden overflow-y-auto lg:h-full h-[20rem] md:h-[40rem]"
         data-aos="fade-left"
       >
         {projects?.map((project, index) => (
           <div key={index}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button className="rounded-lg hover:bg-cyan-600 transition-colors duration-300">
+              <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300 b_glow">
                 <img
                   src={project.image}
                   alt="title"
-                  className="rounded-2xl border-2 p-1 border-cyan-600 img_glow"
+                  className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
                 />
               </button>
             </a>
