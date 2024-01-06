@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import Screen from "../components/Screen";
 import Pagination from "../components/Pagination";
@@ -16,6 +16,7 @@ const Project = () => {
     duration: 750, });
   }, []);
 
+  let filtered;
   const projects = [
     {
       image: project1,
@@ -39,26 +40,42 @@ const Project = () => {
     }
   ];
 
+  const [filteredProjects, setFilteredProjects] = useState(projects)
+  const handleClick = (button) => {
+    if (button === "Javascript") {
+      filtered = projects.filter((project) =>{
+        console.log(filteredProjects)
+        return project.link.includes("https://hobbitcounter.netlify.app") || project.link.includes("https://bookresearch.netlify.app/")
+      })
+      setFilteredProjects(filtered)
+    } else if (button === "React") {
+      filtered = projects.filter((project) =>{
+        console.log(filteredProjects)
+        return project.link.includes("https://borcelleyogastudio.netlify.app/") || project.link.includes("https://climatechangealert.netlify.app") || project.link.includes("https://to-do-appbyme.netlify.app/")
+      })
+      setFilteredProjects(filtered)
+    } else  {
+      setFilteredProjects(projects)
+    }
+  }
   return (
     <section
       className="flex flex-col items-center justify-center overflow-x-hidden"
     >
+      <div data-aos="fade-right" className="text-center">
       <h2
-        data-aos="fade-right"
         className="text-[52px] font-semibold leading-normal uppercase text-cyan-500"
       >
         Projects
       </h2>
-      <Pagination />
-      <p data-aos="fade-right" className="text-center text-base text-white">
-        Click the image for try the project
-      </p>
+      <Pagination onClick={handleClick}/>
+      </div>
       <Screen>
       <div
         className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-5 mt-5 lg:overflow-y-hidden overflow-y-auto lg:h-full h-[20rem] md:h-[40rem] px-4"
         data-aos="fade-left"
       >
-        {projects?.map((project, index) => (
+        {filteredProjects?.map((project, index) => (
           <div key={index}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
