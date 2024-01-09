@@ -29,7 +29,6 @@ const Contact = () => {
       alert("email successfully sent");
     } catch (error) {
       setLoading(false);
-      console.log(error);
     }
   };
   return (
@@ -38,7 +37,7 @@ const Contact = () => {
         data-aos="fade-left"
         className="flex flex-col items-center justify-center"
       >
-        <h2 className="text-[52px] font-semibold leading-normal uppercase text-cyan-500">
+        <h2 className="lg:text-[52px] text-[3rem] font-semibold leading-normal uppercase text-cyan-500">
           Contact me
         </h2>
         <form className="flex flex-col gap-2 lg:w-1/2" onSubmit={handleSubmit}>

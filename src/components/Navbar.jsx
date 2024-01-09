@@ -43,13 +43,13 @@ const Navbar = () => {
 
   return (
     <nav className="z-10 text-cyan-500 hologram">
-      <div className="h-10vh flex justify-between z-50 lg:py-5 px-20 py-4 border-b border-slate-800">
+      <div className="h-10vh flex justify-between z-50 lg:py-5 px-5 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1 gap-5">
           <Link to="/">
           <span className="text-3xl font-bold text-cyan-500 logo cursor-pointer">MISAKI</span>
           </Link>
         </div>
-        <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
+        <div className="lg:flex lg:flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px] z-1">
             <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>{click && content}</div>
-          <button className="block md:hidden transition" onClick={handleClick}>
+          <button className="block lg:hidden transition" onClick={handleClick}>
           {click ? <FaTimes size={30} /> : <CiMenuFries size={30} />}
         </button>
       </div>

@@ -42,15 +42,13 @@ const Project = () => {
 
   const [filteredProjects, setFilteredProjects] = useState(projects)
   const handleClick = (button) => {
-    if (button === "Javascript") {
+     if (button === "Javascript") {
       filtered = projects.filter((project) =>{
-        console.log(filteredProjects)
         return project.link.includes("https://hobbitcounter.netlify.app") || project.link.includes("https://bookresearch.netlify.app/")
       })
       setFilteredProjects(filtered)
     } else if (button === "React") {
       filtered = projects.filter((project) =>{
-        console.log(filteredProjects)
         return project.link.includes("https://borcelleyogastudio.netlify.app/") || project.link.includes("https://climatechangealert.netlify.app") || project.link.includes("https://to-do-appbyme.netlify.app/")
       })
       setFilteredProjects(filtered)

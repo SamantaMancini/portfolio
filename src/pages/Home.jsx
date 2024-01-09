@@ -20,7 +20,7 @@ const Home = () => {
     <section className="px-4 lg:px-0">
        <Screen>
       <div className="px-0 2xl:py-40 text-center gap-1 lg:text-start flex lg:flex-row flex-col-reverse justify-center lg:gap-[20%] items-center">
-        <div className="lg:py-20 py-10 flex flex-col justify-center lg:items-start items-center z-10" data-aos="fade-right">
+        <div className="lg:py-20 py-5 flex flex-col justify-center lg:items-start items-center z-10" data-aos="fade-right">
           <h1 className="text-[52px] font-semibold mb-8 leading-normal uppercase text-cyan-500">
             Hello! <br />I am Samy
           </h1>
@@ -75,7 +75,7 @@ const Home = () => {
           alt="me"
           width={250}
           height={250}
-          className="rounded-full border-2 p-1 border-cyan-600 img_glow max-[576px]:w-1/2 h-200px"
+          className="rounded-full border-2 p-1 border-cyan-600 img_glow max-[576px]:w-1/2 h-200px mt-4 lg:mt-0"
         />
       </div>
       </Screen>
