@@ -1,4 +1,5 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Screen from "../components/Screen";
 import { TypeAnimation } from 'react-type-animation';
@@ -57,14 +58,9 @@ const Home = () => {
                 >
                   <FaGithub size={30} />
                 </a>
-                <a
-                  href="mailto:s.mancini93@hotmail.it"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-cyan-500 hover:text-[#ff19f3] rounded-full glow p-2"
-                >
-                  <FaEnvelope size={30} />
-                </a>
+                <Link to="/contacts">
+                  <FaEnvelope size={45} className="text-cyan-500 hover:text-[#ff19f3] p-2 glow hover:rounded-full" />
+                </Link>
               </div>
             </div>
           </div>
