@@ -1,6 +1,4 @@
-import cv from "../assets/CV Samanta.pdf";
 import { useEffect } from "react";
-import Button from "../components/Button";
 import Screen from "../components/Screen";
 import AOS from "aos";
 import "aos/dist/aos.css";
