@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Screen from "../components/Screen";
 import { TypeAnimation } from 'react-type-animation';
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/hero.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../index.css'
@@ -27,12 +27,12 @@ const Home = () => {
           </h1>
           <h2 className="md:text-2xl text-xl md:leading-normal leading-5 font-bold text-white type">
           <TypeAnimation sequence={[
-          "FRONT END DEVELOPER", 1000, 
+          "WEB DEVELOPER", 1000, 
           "PROBLEM SOLVER", 1000, 
           "CREATIVE", 1000, 
           "PRECISE", 1000, 
           "CURIOUS", 1000, 
-          "VIDEOGAMES LOVER", 1000
+          "GAME DEVELOPER", 1000
           ]}
           speed={50}
           wrapper="span"

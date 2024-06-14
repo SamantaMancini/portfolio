@@ -1,6 +1,5 @@
 import cv from "../assets/CV Samanta.pdf";
 import { useEffect } from "react";
-import { DiPython } from "react-icons/di";
 import Button from "../components/Button";
 import Screen from "../components/Screen";
 import AOS from "aos";
@@ -10,7 +9,7 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       easing: "ease-out-quart",
-      delay: 1200,
+      delay: 0,
       duration: 750,
     });
   }, []);

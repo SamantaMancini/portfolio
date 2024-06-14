@@ -27,11 +27,6 @@ const Navbar = () => {
           </Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-          <Link to="/skills">
-            Skills
-          </Link>
-          </li>
-          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <Link to="/contacts">
             Contacts
           </Link>

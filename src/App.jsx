@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Portfolio.jsx";
-import Skills from "./pages/Skills.jsx";
+import Webskills from "./pages/Webskills.jsx";
+import Gameskills from "./pages/Gameskills.jsx";
 import Contacts from "./pages/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -37,16 +38,13 @@ const App = () => {
         </div>
       ) : (
         <div className="h-screen img-cover">
-          <BrowserRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
-          </BrowserRouter>
           <Footer />
         </div>
       )}
