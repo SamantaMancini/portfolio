@@ -36,7 +36,7 @@ const Project = () => {
   const games = [
     {
       image: project1,
-      link: "",
+      link: "https://mtgmisaki.itch.io/rayxim-dreams",
     },
     {
       image: project2,
