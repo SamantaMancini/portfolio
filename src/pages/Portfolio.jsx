@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import Screen from "../components/Screen";
 import Pagination from "../components/Pagination";
-import project1 from "../assets/images/project-2.jpg";
-import project2 from "../assets/images/project-3.jpg";
-import project3 from "../assets/images/project-5.png";
-import project4 from "../assets/images/project-6.jpg";
-import project5 from "../assets/images/project-7.png";
+import project3 from "../assets/images/project-5.webp";
+import project4 from "../assets/images/project-6.webp";
+import project5 from "../assets/images/project-7.webp";
+import project1 from "../assets/images/rayxim.webp";
+import project2 from "../assets/images/museum.webp";
+import project6 from "../assets/images/house.webp";
 
 const Project = () => {
   useEffect(() => {
@@ -16,16 +17,8 @@ const Project = () => {
     duration: 750, });
   }, []);
 
-  let filtered;
+ 
   const projects = [
-    {
-      image: project1,
-      link: "https://hobbitcounter.netlify.app",
-    },
-    {
-      image: project2,
-      link: "https://bookresearch.netlify.app/",
-    },
     {
       image: project3,
       link: "https://borcelleyogastudio.netlify.app/",
@@ -40,22 +33,36 @@ const Project = () => {
     }
   ];
 
-  const [filteredProjects, setFilteredProjects] = useState(projects)
-  const handleClick = (button) => {
-     if (button === "Javascript") {
-      filtered = projects.filter((project) =>{
-        return project.link.includes("https://hobbitcounter.netlify.app") || project.link.includes("https://bookresearch.netlify.app/")
-      })
-      setFilteredProjects(filtered)
-    } else if (button === "React") {
-      filtered = projects.filter((project) =>{
-        return project.link.includes("https://borcelleyogastudio.netlify.app/") || project.link.includes("https://climatechangealert.netlify.app") || project.link.includes("https://to-do-appbyme.netlify.app/")
-      })
-      setFilteredProjects(filtered)
-    } else  {
-      setFilteredProjects(projects)
+  const games = [
+    {
+      image: project1,
+      link: "",
+    },
+    {
+      image: project2,
+      link: "https://dandygames.itch.io/welcome-to-rich-art",
+    },
+    {
+      image: project6,
+      link: "https://dandygames.itch.io/please-sell-this-house",
     }
+  ];
+
+  const [filteredProjects, setFilteredProjects] = useState(projects)
+  const [filteredGames, setFilteredGames] = useState(games)
+  const handleClick = (button) => {
+     if (button === "Web Apps") {
+      setFilteredProjects(projects)
+      setFilteredGames([])
+  } else if (button === "Games") {
+    setFilteredGames(games)
+    setFilteredProjects([])
+  } else {
+    setFilteredGames(games)
+    setFilteredProjects(projects)
   }
+  
+}
   return (
     <section
       className="flex flex-col items-center justify-center overflow-x-hidden"
@@ -79,6 +86,19 @@ const Project = () => {
               <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
                 <img
                   src={project.image}
+                  alt="title"
+                  className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
+                />
+              </button>
+            </a>
+          </div>
+        ))}
+        {filteredGames?.map((game, index) => (
+          <div key={index}>
+            <a href={game.link} target="_blank" rel="noopener noreferrer">
+              <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
+                <img
+                  src={game.image}
                   alt="title"
                   className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
                 />

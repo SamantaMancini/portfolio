@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs} from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { BiLogoJavascript, BiLogoMongodb } from "react-icons/bi";
-
+import { FaReact, FaNodeJs} from "react-icons/fa";
+import { BiLogoMongodb, BiLogoRedux } from "react-icons/bi";
+import {SiExpress, SiMysql, SiTypescript, SiTailwindcss } from "react-icons/si";
 import Aos from "aos";
 
 const Skills = () => {
@@ -23,28 +22,22 @@ const Skills = () => {
         </h2>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 justify-around h-[25rem] overflow-y-auto lg:overflow-y-hidden lg:h-full">
           <div
-            data-aos="fade-up"
-            className="flex items-center justify-center font-semibold text-red-600 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-cyan-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
-              <FaHtml5 size={50} />
+              <FaReact size={50} />
           </div>
           <div
             data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-blue-700 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            className="flex items-center justify-center font-semibold text-purple-800 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
-              <FaCss3 size={50} />
-          </div>
-          <div
-            data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-yellow-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
-          >
-              <BiLogoJavascript size={50} />
+              <BiLogoRedux size={50} />
           </div>
           <div
             data-aos="fade-down"
             className="flex items-center justify-center font-semibold text-cyan-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
-              <FaReact size={50} />
+              <SiTailwindcss size={50} />
           </div>
           <div
             data-aos="fade-down"
@@ -55,9 +48,30 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-blue-700 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiTypescript size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiExpress size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
             className="flex items-center justify-center font-semibold text-green-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
               <BiLogoMongodb size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiMysql size={50} />
           
           </div>
         </div>

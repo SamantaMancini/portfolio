@@ -23,27 +23,20 @@ const About = () => {
           >
             About me
           </h2>
-          <div className="text-left mobile-landscape lg:mx-10 px-4">
+          <div className="text-left mobile-landscape lg:mx-10 p-4">
             <p
               className="text-white text-xs lg:text-base"
             >
-              My creativity allows me to find innovative solutions to problems and create something from scratch.
+              I have always had a strong passion for programming and everything related to it, which is why I have decided to deepen my knowledge more and more. Despite being a game developer with a couple of years of experience with Unreal Engine, I now wanted to take an important new step for my profession, which is to study Godot Engine.
 
-              When I discovered the role of Front End developer, it was love at first sight. I studied through the Front End master at start2impact University and acquired coding skills such as Javascript, CSS, HTML, React.js.
+              I mainly use C++ and Blueprint, Python and Godot script as programming languages, however, following other branches of the sector, I have chosen to focus my study on front-end knowledge with HTML5, CSS3, JavaScript and React.js framework, while for the back-end Node.js with notions of MongoDB.
+
+              Although I know that this path has no end, I am motivated to continue constantly every day.
 
               <br/>🔭 I’m working as Front-End Developer
               <br/>📚 I'm currently learning Python
               <br/>⚡ In my free time, I read, write on my blog and personal novel, play video games, and have a deep passion for Japanese culture.
             </p>
-          </div>
-          <div className="flex mt-5 gap-2">
-            <div className="flex items-center justify-center">
-              <div className="flex space-x-2">
-                <a href={cv} download>
-                  <Button text={"Download CV"}/>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

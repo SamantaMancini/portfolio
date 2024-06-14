@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { FaPython } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { BiLogoCPlusPlus } from "react-icons/bi";
-
+import { BiLogoCPlusPlus, BiLogoBlender } from "react-icons/bi";
+import { SiAdobephotoshop, SiUnrealengine, SiGodotengine } from "react-icons/si";
 import Aos from "aos";
 
 const Skills = () => {
@@ -31,9 +30,37 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-blue-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            className="flex items-center justify-center font-semibold text-pink-600 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
               <BiLogoCPlusPlus size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-orange-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <BiLogoBlender size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-blue-600 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiAdobephotoshop size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiUnrealengine size={50} />
+          
+          </div>
+          <div
+            data-aos="fade-down"
+            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+          >
+              <SiGodotengine size={50} />
           
           </div>
         </div>
