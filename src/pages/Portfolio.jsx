@@ -29,13 +29,13 @@ const Project = () => {
     { 
       id: 2,
       image: project4,
-      link: "https://borcelleyogastudio.netlify.app/",
+      link: "https://climatechangealert.netlify.app/",
       type: "web"
     },
     { 
       id: 3,
       image: project5,
-      link: "https://borcelleyogastudio.netlify.app/",
+      link: "https://to-do-appbyme.netlify.app/",
       type: "web"
     },
     { 
