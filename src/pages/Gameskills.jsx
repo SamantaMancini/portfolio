@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { FaPython } from "react-icons/fa";
-import { BiLogoCPlusPlus, BiLogoBlender } from "react-icons/bi";
+import { BiLogoCPlusPlus, BiLogoBlender, BiLogoPython } from "react-icons/bi";
 import { SiAdobephotoshop, SiUnrealengine, SiGodotengine } from "react-icons/si";
 import Aos from "aos";
 
@@ -23,14 +22,14 @@ const Skills = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 justify-around h-[25rem] overflow-y-auto lg:overflow-y-hidden lg:h-full">
           <div
             data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            className="flex items-center justify-center font-semibold text-yellow-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
-              <FaPython size={50} />
+              <BiLogoPython size={50} />
           
           </div>
           <div
             data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-pink-600 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            className="flex items-center justify-center font-semibold text-blue-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
               <BiLogoCPlusPlus size={50} />
           
@@ -58,7 +57,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="fade-down"
-            className="flex items-center justify-center font-semibold text-white rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
+            className="flex items-center justify-center font-semibold text-blue-500 rounded-ss-3xl rounded-br-3xl h-[5rem] w-[7rem] sm:h-[7rem] sm:w-[9rem] border-2 border-[#ff19f3] hologram"
           >
               <SiGodotengine size={50} />
           

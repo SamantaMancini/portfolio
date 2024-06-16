@@ -18,51 +18,61 @@ const Project = () => {
   }, []);
 
  
-  const projects = [
-    {
+  const projects = 
+  [
+    { 
+      id: 1,
       image: project3,
       link: "https://borcelleyogastudio.netlify.app/",
+      type: "web"
     },
-    {
+    { 
+      id: 2,
       image: project4,
-      link: "https://climatechangealert.netlify.app",
+      link: "https://borcelleyogastudio.netlify.app/",
+      type: "web"
     },
-    {
+    { 
+      id: 3,
       image: project5,
-      link: "https://to-do-appbyme.netlify.app/",
-    }
-  ];
-
-  const games = [
-    {
+      link: "https://borcelleyogastudio.netlify.app/",
+      type: "web"
+    },
+    { 
+      id: 4,
       image: project1,
       link: "https://mtgmisaki.itch.io/rayxim-dreams",
+      type: "games"
     },
-    {
+    { 
+      id: 5,
       image: project2,
       link: "https://dandygames.itch.io/welcome-to-rich-art",
+      type: "games"
     },
-    {
+    { 
+      id: 6,
       image: project6,
       link: "https://dandygames.itch.io/please-sell-this-house",
-    }
-  ];
+      type: "games"
+    },
+  ]
 
   const [filteredProjects, setFilteredProjects] = useState(projects)
-  const [filteredGames, setFilteredGames] = useState(games)
   const handleClick = (button) => {
-     if (button === "Web Apps") {
+    if (button === "Web Apps") 
+    {
+        setFilteredProjects(projects.filter(project => project.type === "web"))
+    } 
+    else if (button === "Games") 
+    {
+      setFilteredProjects(projects.filter(project => project.type === "games"))
+    } 
+    else 
+    {
       setFilteredProjects(projects)
-      setFilteredGames([])
-  } else if (button === "Games") {
-    setFilteredGames(games)
-    setFilteredProjects([])
-  } else {
-    setFilteredGames(games)
-    setFilteredProjects(projects)
-  }
-  
-}
+    }
+ }
   return (
     <section
       className="flex flex-col items-center justify-center overflow-x-hidden"
@@ -80,25 +90,12 @@ const Project = () => {
         className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-5 mt-5 lg:overflow-y-hidden overflow-y-auto lg:h-full h-[20rem] md:h-[40rem] px-4"
         data-aos="fade-left"
       >
-        {filteredProjects?.map((project, index) => (
+        {filteredProjects?.map((filteredWeb, index) => (
           <div key={index}>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a href={filteredWeb.link} target="_blank" rel="noopener noreferrer">
               <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
                 <img
-                  src={project.image}
-                  alt="title"
-                  className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
-                />
-              </button>
-            </a>
-          </div>
-        ))}
-        {filteredGames?.map((game, index) => (
-          <div key={index}>
-            <a href={game.link} target="_blank" rel="noopener noreferrer">
-              <button className="rounded-lg hover:bg-[#ff19f3] transition-colors duration-300">
-                <img
-                  src={game.image}
+                  src={filteredWeb.image}
                   alt="title"
                   className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
                 />

@@ -1,5 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaItchIo, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect } from "react";
 import Screen from "../components/Screen";
 import { TypeAnimation } from 'react-type-animation';
@@ -58,9 +57,14 @@ const Home = () => {
                 >
                   <FaGithub size={30} />
                 </a>
-                <Link to="/contacts">
-                  <FaEnvelope size={45} className="text-cyan-500 hover:text-[#ff19f3] p-2 glow hover:rounded-full" />
-                </Link>
+                <a
+                  href="https://mtgmisaki.itch.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-cyan-500 hover:text-[#ff19f3] p-2 glow hover:rounded-full"
+                  >
+                  <FaItchIo size={30} />
+                </a>
               </div>
             </div>
           </div>

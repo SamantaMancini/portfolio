@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import {BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
 import Loading from "./components/Loading.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -8,7 +8,6 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Portfolio.jsx";
 import Webskills from "./pages/Webskills.jsx";
 import Gameskills from "./pages/Gameskills.jsx";
-import Contacts from "./pages/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => {
@@ -45,7 +44,6 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/web-skills" element={<Webskills />} />
             <Route path="/game-skills" element={<Gameskills />} />
-            <Route path="/contacts" element={<Contacts />} />
           </Routes>
           <Footer />
         </div>

@@ -36,11 +36,6 @@ const Navbar = () => {
           Game skills
           </Link>
           </li>
-          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-          <Link to="/contacts">
-            Contacts
-          </Link>
-          </li>
         </ul>
       </div>
     </>
@@ -71,9 +66,6 @@ const Navbar = () => {
               </li>
               <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
               <Link to="/game-skills">Game skills</Link>
-              </li>
-              <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
-              <Link to="/contacts">Contacts</Link>
               </li>
             </ul>
           </div>
