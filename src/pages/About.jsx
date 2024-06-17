@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Screen from "../components/Screen";
+import OutlinedTimeline from "../components/Timeline";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -39,6 +40,7 @@ const About = () => {
         </div>
       </div>
       </Screen>
+      <OutlinedTimeline />
     </section>
   );
 };

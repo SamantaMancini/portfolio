@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.20",
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "prettier": "^3.0.3",
