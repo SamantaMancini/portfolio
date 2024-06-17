@@ -17,11 +17,11 @@ const Home = () => {
     });
   }, []);
   return (
-    <section className="px-4 lg:px-0">
+    <section className="p-4 lg:p-0">
        <Screen>
       <div className="px-0 text-center gap-1 lg:text-start flex lg:flex-row flex-col-reverse justify-center lg:gap-[20%] items-center">
         <div className="lg:py-20 py-5 flex flex-col justify-center lg:items-start items-center z-10" data-aos="fade-right">
-          <h1 className="text-[52px] font-semibold mb-8 leading-normal uppercase text-cyan-500">
+          <h1 className="lg:text-[52px] text-3xl font-semibold mb-8 leading-normal uppercase text-cyan-500">
             Hello! <br />I am Samy
           </h1>
           <h2 className="md:text-2xl text-xl md:leading-normal leading-5 font-bold text-white type">

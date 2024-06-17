@@ -17,11 +17,11 @@ const About = () => {
       <div className="text-center gap-5 flex flex-col justify-center items-center overflow-x-hidden">
         <div className="h-full flex flex-col justify-center items-center" data-aos="fade-right">
           <h2
-            className="lg:text-[52px] text-[3rem] font-semibold leading-normal uppercase text-cyan-500 text-center"
+            className="lg:text-[52px] text-3xl font-semibold leading-normal uppercase text-cyan-500 text-center"
           >
             About me
           </h2>
-          <div className="text-left mobile-landscape lg:mx-10 p-4">
+          <div className="text-left mobile-landscape lg:mx-10 p-2">
             <p
               className="text-white text-xs lg:text-base"
             >

@@ -79,7 +79,7 @@ const Project = () => {
     >
       <div data-aos="fade-right" className="text-center">
       <h2
-        className="text-[52px] font-semibold leading-normal uppercase text-cyan-500"
+        className="lg:text-[52px] text-3xl font-semibold leading-normal uppercase text-cyan-500"
       >
         Projects
       </h2>
@@ -97,7 +97,7 @@ const Project = () => {
                 <img
                   src={filteredWeb.image}
                   alt="title"
-                  className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem]"
+                  className="rounded-2xl border-2 p-1 hover:bg-[#ff19f3] h-[10rem] w-[20rem]"
                 />
               </button>
             </a>

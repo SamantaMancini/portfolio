@@ -10,7 +10,7 @@ const Navbar = () => {
   const content = (
     <>
       <div className="lg:hidden block absolute top-16 left-0 right-0 transition z-20 bg-slate-900 text-cyan-500">
-        <ul className="text-center text-xl p-20 z-10">
+        <ul className="text-center text-lg p-20 z-10">
         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <Link to="/">
             Home
@@ -26,12 +26,12 @@ const Navbar = () => {
             Portfolio
           </Link>
           </li>
-          <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <Link to="/web-skills">
           Web skills
           </Link>
           </li>
-          <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#ff19f3] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left hover:text-[#ff19f3] hover:border-[#ff19f3] cursor-pointer">
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <Link to="/game-skills">
           Game skills
           </Link>
