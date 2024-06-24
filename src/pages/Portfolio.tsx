@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Aos from "aos";
+import { Project } from "../types/types";
 import Screen from "../components/Screen";
 import Pagination from "../components/Pagination";
 import project3 from "../assets/images/project-5.webp";
@@ -9,7 +10,7 @@ import project1 from "../assets/images/rayxim.webp";
 import project2 from "../assets/images/museum.webp";
 import project6 from "../assets/images/house.webp";
 
-const Project = () => {
+const Projects = () => {
   useEffect(() => {
     Aos.init({ 
     easing: "ease-out-quart",
@@ -58,17 +59,16 @@ const Project = () => {
     },
   ]
 
-  const [filteredProjects, setFilteredProjects] = useState(projects)
-  const handleClick = (button) => {
-    if (button === "Web Apps") 
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects)
+  const handleClick: any = (pageInfo: string) => {
+    if (pageInfo === "Web Apps") 
     {
-        setFilteredProjects(projects.filter(project => project.type === "web"))
-    } 
-    else if (button === "Games") 
+      setFilteredProjects(projects.filter(project => project.type === "web"))
+    } else if (pageInfo === "Games") 
     {
       setFilteredProjects(projects.filter(project => project.type === "games"))
-    } 
-    else 
+    }
+    else
     {
       setFilteredProjects(projects)
     }
@@ -83,7 +83,7 @@ const Project = () => {
       >
         Projects
       </h2>
-      <Pagination onClick={handleClick}/>
+      <Pagination onClick={(handleClick)}/>
       </div>
       <Screen>
       <div
@@ -109,4 +109,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

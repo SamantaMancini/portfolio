@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState<boolean>(false);
   const handleClick = () => setClick(!click);
   
   const content = (

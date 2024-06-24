@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
-import Loading from "./components/Loading.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Projects from "./pages/Portfolio.jsx";
-import Webskills from "./pages/Webskills.jsx";
-import Gameskills from "./pages/Gameskills.jsx";
-import Footer from "./components/Footer.jsx";
+import Loading from "./components/Loading.js";
+import Navbar from "./components/Navbar.js";
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Projects from "./pages/Portfolio.js";
+import Webskills from "./pages/Webskills.js";
+import Gameskills from "./pages/Gameskills.js";
+import Footer from "./components/Footer.js";
 
 const App = () => {
   const { loading, setLoading } = Loading();
@@ -30,8 +30,6 @@ const App = () => {
             radius={5}
             color="#46c8ef"
             ariaLabel="ball-triangle-loading"
-            wrapperClass={{}}
-            wrapperStyle=""
             visible={true}
           />
         </div>
