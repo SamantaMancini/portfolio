@@ -40,7 +40,6 @@ const About = () => {
         </div>
       </div>
       </Screen>
-      <OutlinedTimeline />
     </section>
   );
 };
